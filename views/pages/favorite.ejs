@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/style.css">
-    <title>Home</title>
+        <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
+
+    <title><%=name%></title>
 </head>
 
 <body>
@@ -104,12 +106,12 @@
                         <h5 class="conp">
                         <div class="text"> Flag : </div> <input type="text" name="flag" id="flag" value="<%=val.flag%>">
                         </h5>
-                        <input type="submit" value="update">
+                        <input id="update" type="submit" value="Update">
                     </form>
                 </div>
                 <div>
                     <form action="/delete/<%=val.id%>?_method=delete" method="post">
-                        <input type="submit" value="delete">
+                        <input id="delete" type="submit" value="Delete">
                     </form>
                 </div>
             </div>
