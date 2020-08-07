@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+        <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
+
+    <title><%=name%></title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <%=name%> Page
+        </h1>
+        <nav>
+            <ul>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/favorite">
+                    <li>Favorite</li>
+                </a>
+                <a href="/">
+                    <li></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <%console.log(data)%>
+        <div class="allFav">
+            <%data.forEach((val,ind)=>{%>
+            <%console.log(val.name)%>
+            <%console.log(val.capital)%>
+            <%console.log(val.region)%>
+            <%console.log(val.subregion)%>
+            <%console.log(val.population)%>
+            <%console.log(val.borders)%>
+            <%console.log(val.nativename)%>
+            <%console.log(val.numericCode)%>
+            <%console.log(val.currencies)%>
+            <%console.log(val.latlng)%>
+            <%console.log(val.flag)%>
+            <div class="containerFav">
+                <h2 class="con">
+                    <div class="text"> Name of country: </div> <%=val.name%>
+                </h2>
+                <h3 class="con">
+                    <div class="text"> The capital : </div> <%=val.capital%>
+                </h3>
+                <h4 class="con">
+                    <div class="text"> region : </div> <%=val.region%>
+                </h4>
+                <h5 class="conp">
+                <div class="text"> supregion : </div> <%=val.subregion%>
+                </h5>
+                <h5 class="conp">
+                <div class="text"> population : </div> <%=val.population%></h5>
+                <h5 class="conp">
+                <div class="text"> The Borders : </div> <%=val.borders%></h5>
+                <h5 class="conp">
+                <div class="text"> Native Name : </div> <%=val.nativename%></h5>
+                <h5 class="conp">
+                <div class="text"> Numeric Code : </div> <%=val.numericCode%></h5>
+                <h5 class="con">
+                <div class="text"> Currencies : </div> <%=val.currencies%></h5>
+                <h5 class="conp">
+                <div class="text"> Longtude & latitude : </div> <%=val.latlng%></h5>
+                <img src="<%=val.flag%>">
+                <div>
+                    <form action="/update/<%=val.id%>?_method=put" method="post">
+                        <h5 class="conp">
+                        <div class="text"> Name of country: </div> <input type="text"
+                            name="naagLongtude & latitude :aame" value="<%=val.name%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> The capital : </div> <input type="text" name="capital" id="capital"
+                            value="<%=val.capital%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> region : </div> <input type="text" name="region" id="region"
+                            value="<%=val.region%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> supregion : </div> <input type="text" name="subregion" id="subregion"
+                            value="<%=val.subregion%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> population : </div> <input type="text" name="population" id="population"
+                            value="<%=val.population%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> The Borders : </div> <input type="text" name="borders" id="borders"
+                            value="<%=val.borders%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> Native Name : </div> <input type="text" name="nativename" id="nativename"
+                            value="<%=val.nativename%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> Numeric Code : </div> <input type="text" name="numericCode" id="numericCode"
+                            value="<%=val.numericCode%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> Currencies : </div> <input type="text" name="currencies" id="currencies"
+                            value="<%=val.currencies%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> Longtude & latitude : </div> <input type="text" name="latlng" id="latlng"
+                            value="<%=val.latlng%>"></h5>
+                        <h5 class="conp">
+                        <div class="text"> Flag : </div> <input type="text" name="flag" id="flag" value="<%=val.flag%>">
+                        </h5>
+                        <input id="update" type="submit" value="Update">
+                    </form>
+                </div>
+                <div>
+                    <form action="/delete/<%=val.id%>?_method=delete" method="post">
+                        <input id="delete" type="submit" value="Delete">
+                    </form>
+                </div>
+            </div>
+            <%})%>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

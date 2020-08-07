@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
+    <title><%=name%></title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <%=name%> Page
+        </h1>
+        <nav>
+            <ul>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/favorite">
+                    <li>Favorite</li>
+                </a>
+                <a href="/">
+                    <li></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <%console.log(data)%>
+        <div class="all">
+            <%data.forEach((val,ind)=>{%>
+            <div class="container">
+                <h1>Name of country:    <%=val.name%></h2>
+                <h3>The capital : <%=val.capital%></h3>
+                <h4>region : <%=val.region%></h4>
+                <p>supregion : <%=val.subregion%></p>
+                <p>population : <%=val.population%></p>
+                <p>The Borders : <%=val.borders%></p>
+                <p>Native Name : <%=val.nativename%></p>
+                <p>Numeric Code : <%=val.numericCode%></p>
+                <p>Currencies : <%=val.currencies%></p>
+                <p>Longtude & latitude : <%=val.latlng%></p>
+                <img src="<%=val.flag%>">
+
+                <div>
+                    <form action="/addToDb" method="get">
+                        <input type="hidden" name="name" value="<%=val.name%>">
+                        <input type="hidden" name="capital" value="<%=val.capital%>">
+                        <input type="hidden" name="region" value="<%=val.region%>">
+                        <input type="hidden" name="subregion" value="<%=val.subregion%>">
+                        <input type="hidden" name="population" value="<%=val.population%>">
+                        <input type="hidden" name="borders" value="<%=val.borders%>">
+                        <input type="hidden" name="nativename" value="<%=val.nativename%>">
+                        <input type="hidden" name="numericCode" value="<%=val.numericCode%>">
+                        <input type="hidden" name="currencies" value="<%=val.currencies%>">
+                        <input type="hidden" name="latlng" value="<%=val.latlng%>">
+                        <input type="hidden" name="flag" value="<%=val.flag%>">
+                        <input id="button" type="submit" value="Add To DataBase">
+                    </form>
+                </div>
+            </div>
+            <%})%>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

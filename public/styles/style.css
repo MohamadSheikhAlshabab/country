@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+
+    height: 110vh;
+    width: 23vw; 
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.356);
+    background-color: #00adb5;
+    color: #ffffff;
+    text-shadow:0.1px 0.1px 0.1px   rgb(0, 0, 0);
+    box-shadow: inset -100px -80px 500px -100px  #393e46, -110px -80px 10.5px -110px  #393e46;
+    font-family: "Amazon Ember"; src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); 
+    border-radius: 30px;
+}
+.container>h1{
+    text-align: center;
+}
+.container>img{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: inset -100px -80px 100px -100px  #ffffff1e, -100px -100px 100px -80px  #0000001e;
+}
+#button,#update,#delete{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+div>form>p>input ,div>form>input{
+    border: 1px solid rgba(223, 222, 222, 0.356);
+   color: #222831;
+   background-color: #eeeeee;
+    /* text-shadow:1.1px 5px 5px rgba(0, 0, 0, 0.63); */
+    box-shadow: inset -100px -80px 100px -100px  #ffffff48, -5.1px -5.8px 10.5px 5.1px  #ffffff36;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: xx-large;
+    font-weight: bolder;
+    border-radius: 10px;
+height: 5vh;
+width: 12vw;
+text-align: center;
+margin: 18px;
+padding: 0.52px;
+font-size: larger;
+font-weight: 400;
+font-family: "Amazon Ember"; 
+font-weight: bolder;
+src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot");
+}
+input{
+    border: 1px solid rgba(223, 222, 222, 0.356);
+    background-color: #222831;
+    color: #eeeeee;
+    box-shadow: inset -100px -80px 100px -100px  #ffffff48, -5.1px -5.8px 10.5px 5.1px  #ffffff36;
+    font-family: "Amazon Ember"; 
+    font-weight: bolder;
+    src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot");
+    border-radius: 10px;
+    text-align: center;
+}
+.allFav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.containerFav{
+    height: 210vh;
+    width: 23vw; 
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.356);
+    background-color: #00adb5;
+    color: #ffffff;
+    text-shadow:0.1px 0.1px 0.1px   rgb(0, 0, 0);
+    box-shadow: inset -100px -80px 500px -100px  #393e46, -110px -80px 10.5px -110px  #393e46;
+    font-family: "Amazon Ember"; src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); 
+    border-radius: 30px;
+}
+.containerFav>img{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+}
+header{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #393e46;
+    color: #eeeeee;
+    text-shadow:1.3px 1.2px 4.5px rgb(0, 0, 0);
+    box-shadow: inset -100px -80px 500px -100px  #0000001e, -100px -100px 5px -100px  #0000001e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    text-shadow: -3.3px 3.2px 8.5px #eeeeee;
+    background-color: #393e46;
+    color: #00adb5;
+}
+li{
+    display: inline;
+    margin-right: 15px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text,.con,.conp{
+
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+.text{
+    text-align: center;
+}
