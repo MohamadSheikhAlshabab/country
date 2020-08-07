@@ -1,0 +1,97 @@
+.all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+
+    height: 110vh;
+    width: 23vw; 
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow:1.1px 1px 4px rgb(0, 0, 0);
+    box-shadow: inset -100px -80px 500px -100px  #0000001e, -100px -100px 5px -100px  #0000001e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container>h1{
+    text-align: center;
+}
+.container>img{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: inset -100px -80px 100px -100px  #0000001e, -100px -100px 100px -100px  #0000001e;
+}
+div>form>p>input ,div>form>input{
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow:1.3px 1.2px 4.5px rgb(0, 0, 0);
+    box-shadow:  3px 5px 31.3px 1.3px  #0000001e;
+height: 5vh;
+width: 12vw;
+text-align: left;
+margin: 18px;
+padding: 0.52px;
+font-size: larger;
+font-weight: 400;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.allFav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.containerFav{
+
+    height: 210vh;
+    width: 23vw; 
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow:1.1px 1px 4px rgb(0, 0, 0);
+    box-shadow: inset -100px -80px 500px -100px  #0000001e, -100px -100px 5px -100px  #0000001e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.containerFav>img{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+}
+header{
+    text-align: center;
+    border: 10px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow:1.3px 1.2px 4.5px rgb(0, 0, 0);
+    box-shadow: inset -100px -80px 500px -100px  #0000001e, -100px -100px 5px -100px  #0000001e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+    margin-right: 15px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text,.con,.conp{
+
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+.text{
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+        <%=name%> Page
+        </h1>
+        <nav>
+            <ul>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/favorite">
+                    <li>Favorite</li>
+                </a>
+                <a href="/">
+                    <li></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="all">
+            <div class="container">
+                <h1>Name of country:    <%=val.name%></h2>
+                <h3>The capital : <%=val.capital%></h3>
+                <h4>region : <%=val.region%></h4>
+                <p>supregion : <%=val.subregion%></p>
+                <p>population : <%=val.population%></p>
+                <p>The Borders : <%=val.borders%></p>
+                <p>Native Name : <%=val.nativename%></p>
+                <p>Numeric Code : <%=val.numericCode%></p>
+                <p>Currencies : <%=val.currencies%></p>
+                <p>Longtude & latitude : <%=val.latlng%></p>
+                <img src="<%=val.flag%>">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
